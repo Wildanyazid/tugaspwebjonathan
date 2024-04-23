@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metode Pembayaran</title>
+</head>
+<body>
+    <h2>Pilih Metode Pembayaran</h2>
+    <form action="/proses-pembayaran" method="post">
+        <label for="metode">Metode Pembayaran:</label><br>
+        <select id="metode" name="metode" required>
+            <option value="">Pilih Metode Pembayaran</option>
+            <option value="Transfer Bank">Transfer Bank</option>
+            <option value="Kartu Kredit">Qris</option>
+            <option value="Cash or Duel">Cash or Duel</option>
+            <option value="GoPay">GoPay</option>
+        </select><br>
+        
+        <!-- Pesan peringatan -->
+        <script>
+            function showWarning() {
+                alert("pesanan akan segera di antarkan ke alamat tujuan!");
+            }
+        </script>
+        <button onclick="showWarning()">Lanjutkan</button> <!--untuk menampilkan warning-->
+    </form>
+</body>
+</html>
